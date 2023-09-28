@@ -37,7 +37,7 @@ func main() {
 
 	var userInput int
 
-	fmt.Println("Before:", myArray)
+	fmt.Println("Before:", myArray, "\n\n")
 
 	fmt.Println("Player 1: ")
 
@@ -45,13 +45,13 @@ func main() {
 	fmt.Scanln(&userInput)
 
 	
-	userInput = (userInput + len(options)) - len(options)
+	userInput = (userInput + len(options)) - len(options) - 1
 
 	options[userInput](&myArray)
 
 	//checkwinCondition()
 
-	fmt.Println("After:", myArray)
+	fmt.Println("After:", myArray, "\n\n")
 
 	fmt.Println("Player 2: ")
 
